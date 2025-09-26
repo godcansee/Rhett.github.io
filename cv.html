@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简历</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        /* 头部样式 */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* 各部分通用样式 */
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* 经历条目样式 */
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .item-date {
+            color: #7f8c8d;
+        }
+        
+        .item-subtitle {
+            color: #3498db;
+            margin-bottom: 8px;
+        }
+        
+        /* 技能样式 */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .resume-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头部信息 -->
+        <header class="header">
+            <h1 class="name">RUiTao Liu</h1>
+            <!-- <p class="title">前端开发工程师</p> -->
+            <div class="contact-info">
+                <div class="contact-item">📧 ruitao2021@iscas.ac.cn</div>
+                <!-- <div class="contact-item">📱 138-xxxx-xxxx</div> -->
+                <!-- <div class="contact-item">📍 北京市</div> -->
+                <!-- <div class="contact-item">🔗 github.com/zhangsan</div> -->
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">EDUCATIONAL BACKGROUND</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">University of Chinese Academy of Sciences (UCAS)</div>
+                    <div class="item-date">Expected</div>
+                </div>
+                <div class="item-subtitle">Doctor of Philosophy in Cryptography</div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Institute of Software, Chinese Academy of Sciences (ISCAS)</div>
+                    <div class="item-date">2020.9 - 2023.6</div>
+                </div>
+                <div class="item-subtitle">Master of Science in Information Security</div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Jilin University (JLU)</div>
+                    <div class="item-date">2015.9 - 2019.6</div>
+                </div>
+                <div class="item-subtitle">Bachelor of Science in Computer Science and Technology</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Applicable Publications</h2>
+            
+            <div class="publication-item">
+                <div class="item-header">
+                    <div class="item-title">Vectorial Fast Correlation Attacks</div>
+                    <div class="item-date">Asiacrypt 2025</div>
+                </div>
+                <div class="item-header">
+                    <div class="item-title">Improved Fast Correlation Attacks on the Sosemanuk Stream Cipher</div>
+                    <div class="item-date">FSE 2023</div>
+                </div>
+        </section>
+
+        <!-- 个人简介 -->
+        <!-- <section class="section">
+            <h2 class="section-title">个人简介</h2>
+            <p>拥有3年前端开发经验，精通HTML5、CSS3、JavaScript和React框架。热衷于创造优雅、高效的Web解决方案，注重用户体验和代码质量。</p>
+        </section> -->
+        
+        <!-- 工作经历 -->
+        <!-- <section class="section">
+            <h2 class="section-title">工作经历</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">ABC科技有限公司</div>
+                    <div class="item-date">2020年6月 - 至今</div>
+                </div>
+                <div class="item-subtitle">高级前端工程师</div>
+                <ul>
+                    <li>负责公司核心产品的前端架构设计和开发</li>
+                    <li>优化网站性能，使页面加载速度提升40%</li>
+                    <li>带领3人前端团队，进行代码审查和技术指导</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">XYZ互联网公司</div>
+                    <div class="item-date">2018年7月 - 2020年5月</div>
+                </div>
+                <div class="item-subtitle">前端开发工程师</div>
+                <ul>
+                    <li>参与公司多个项目的Web前端开发</li>
+                    <li>使用React重构旧版jQuery项目，提高可维护性</li>
+                    <li>与UI/UX设计师紧密合作，实现高质量的用户界面</li>
+                </ul>
+            </div>
+        </section> -->
+        
+        <!-- 教育背景 -->
+        <!-- <section class="section">
+            <h2 class="section-title">教育背景</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">北京大学</div>
+                    <div class="item-date">2015.9 - 2019.6</div>
+                </div>
+                <div class="item-subtitle">计算机科学与技术学士</div>
+                <p>主修课程：数据结构、算法设计、Web开发、数据库系统等</p>
+            </div>
+        </section> -->
+        
+        <!-- 专业技能 -->
+        <!-- <section class="section">
+            <h2 class="section-title">专业技能</h2>
+            
+            <h3>编程语言</h3>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">TypeScript</span>
+            </div>
+            
+            <h3>框架与库</h3>
+            <div class="skills-list">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+            </div>
+            
+            <h3>工具与平台</h3>
+            <div class="skills-list">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Webpack</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+            </div>
+        </section> -->
+        
+        <!-- 项目经验 -->
+        <!-- <section class="section">
+            <h2 class="section-title">项目经验</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">电商平台重构项目</div>
+                    <div class="item-date">2021年3月 - 2021年9月</div>
+                </div>
+                <p>使用React和TypeScript重构公司核心电商平台，引入微前端架构，提高团队协作效率。</p>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">数据可视化仪表盘</div>
+                    <div class="item-date">2020年10月 - 2021年2月</div>
+                </div>
+                <p>开发基于D3.js和React的数据可视化系统，帮助业务部门更好地理解数据趋势。</p>
+            </div>
+        </section> -->
+    </div>
+</body>
+</html>
